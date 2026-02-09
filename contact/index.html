@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <h1>Contact</h1>
-    <link href="style.css">
+    <link href="../style.css">
 </head>
 <body>
     <nav>
@@ -20,14 +20,14 @@
         <li><a href="https://github.com/estymagb">Github</a>
         </li>
     </nav>
-    <form action="mailto:estymagb@mit.edu" method="get">
+    <form action="mailto:estymagb@mit.edu" method="get" enctype="text/plain">
         <label for="email">Email:</label>
         <input name="email" type="email"/>
         <label for="subject">Subject:</label>
         <input name="subject"/>
         <label for="body">Body:</label>
         <textarea name="body"></textarea>
-        <button type="submit" formmethod="get">Submit</button>
+        <input type="submit" formmethod="get">Submit</input>
     </form>
 </body>
 </html>
