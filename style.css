@@ -167,7 +167,85 @@ h1 {
              and then you can generate a layour just for your resume
              For example:
     */
-    #resume { /* Use this # as your ID selector */
+    #resume {
         max-width: 50rem;
-        /* ... */
+        background-color: rgb(214, 220, 227);
+        border-radius: 15px;
+        padding: 1em;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    #resume-intro h2 {
+        text-align: center;
+        text-size-adjust: 150%;
+        color: black;
+    }
+
+    #resume-intro p {
+        text-align: center;
+    }
+
+    #resume article {
+        background-color:white;
+        border-radius: 15px;
+        box-shadow:oklch(65% 50% 0);
+        padding: 0.5em;
+        margin-bottom: 1.5em;
+        box-shadow: 1cm;
+    }
+
+    #resume h3 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: oklch(65% 50% 0);
+        margin-bottom: 10px;
+        border-bottom-color: rgba(214, 220, 227, 0.352);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    #resume h4 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+        margin: 10px;
+    }
+
+
+    #resume li {
+        padding-left: 0.3em;
+    }
+    #resume ul li::marker {
+        content: "\26E7";
+    }
+
+    #resume #resume-education p {
+        margin-left: 1em;
+        color: rgb(113, 118, 124);
+        font-weight: bold;
+    }
+
+    /** For Experience-specific section */
+    #resume #resume-experience time {
+        color: rgb(113, 118, 124);
+        font-weight: bold;
+        margin-left: 1em;
+    }
+
+    /* Download Button */
+    #download-section {
+        padding: 1em;
+    }
+
+    #download-btn {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: oklch(65% 50% 0);
+        color: white;
+        padding: 1em;
+        text-decoration: none;
+        size: 100em;
+    }
+
+    #download-btn:hover {
+        background: blue;
     }
