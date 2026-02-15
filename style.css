@@ -54,6 +54,7 @@ nav {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: oklch(80%, 3% 200%);
+    background-color: white;
 
     margin-bottom: auto;
     position:sticky;
@@ -70,6 +71,7 @@ nav a {
     text-align: center;
     padding: 0.5em;
     margin-bottom: auto;
+    background-color: white;
 }
 
 nav a.current {
@@ -103,10 +105,12 @@ button {
 /* Step 3.2: Top-down layout */
 
 label, input, textarea, button { /* We define the elements in which we want this to take effect */
-    display: block;
-    /* add width here*/
-    /* add box-sizing here */
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    margin-block: 0.5rem;
 }
+
 label { /* We'll add the spacing between labels here */
     margin-block: 0.5rem;
 }
@@ -117,11 +121,40 @@ label { /* We'll add the spacing between labels here */
         Please work on grid layout here.
         NOTE: this will override what you did in the previous step! remember *Specificity*
     */
-
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column: 1 / -1;
+    gap: 1em;
+}
 
 
 /* STEP 4: Style your projects page */
+img {
+    max-width: 100%;
+}
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-column: 1 / -1;
+
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    gap: 1em;
+
+}
+
+h1 {
+    text-size-adjust: 400%;
+}
+h2 {
+    margin: 0;
+}
+ h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+ }
 
 
 
