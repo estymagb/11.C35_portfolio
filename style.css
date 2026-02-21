@@ -91,6 +91,9 @@ nav a:hover {
     background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 /*  STEP 3: Contact form layout */
 
@@ -172,7 +175,35 @@ h1 {
     text-wrap: balance;
  }
 
+.projects a {
+    text-decoration: none;
+}
 
+.projects a:link {
+    color: deeppink;
+}
+
+.projects a:visited {
+    color: deeppink;
+}
+
+.projects a:hover {
+    color: red;
+}
+.projects a:active {
+    color: blue;
+}
+
+#projects {
+    width: 276.83;
+    height: 138.42;
+}
+
+#projects img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 /* STEP 5: Style your CV */
