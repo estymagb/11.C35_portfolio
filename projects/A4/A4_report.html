@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<style>
+		/**Analysis Links */
+	h1 {
+		color: deeppink;
+	}
+	a:hover {
+		color: red;
+	}
+	a {
+		text-decoration:none;
+		color: deeppink;
+	}
+	a:visited {
+		color: deeppink;
+	}
+	u {
+		color: deeppink;
+	}
+
+	/** Back Button Style*/
+	#nav-back-btn-section {
+		display:flex;
+		grid-template-columns: auto;
+		padding: 1em;
+	}
+
+	#nav-back-btn {
+		display: inline-block;
+		border-radius: 10px;
+		background-color: oklch(65% 50% 0);
+		color: white;
+		padding: 1em;
+		text-decoration: none;
+		size: 100em;
+		height: 10%;
+	}
+
+	#nav-back-btn:hover {
+		background: blue;
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<article id="nav-back-btn-section">
+			<a id="nav-back-btn" href="../index.html">Back</a>
+			<h1>
+				<small>Assignment 4</small>
+				Persuasive or Deceptive Visualization?
+			</h1>
+		</article>
+
+		<p>
+			<strong>Esther Magbagbeola</strong> — <em>estymagb@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+    <h2>Proposition: Women in authoritative power create better working conditions for their country.</h2>
+
+		<section>
+      <h3>FOR the Proposition</h3>
+
+      <figure>
+				<img src="Diversity in Work Benefits Everyone.png" alt="Map of High amounts of women in parliament v.s. harsh work percentages" />
+				<figcaption>
+					Countries with &ge;25% women in parliament have less of their work force in harsh working conditions,
+					as diversity encourages improvements of different socioeconomic backgrounds' daily conditions.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li><b>Precarious Work Axis scale: -1.</b> No tic marks encourage readers
+					to create their own mental scale and think, "Wow these countries have such little
+					job insecurity. Must be nice to live in!" Additionally, only female job vulnerability data
+					is considered, meaning this scale is inaccurate in response to the total population. </li>
+				<li><b>Removed Countries in Bar Chart: -2.</b> Not all
+					countries &ge;25% women in parliament are part of the bar graph, to prevent outliers,
+					and some are ommitted to retain narrative.</li>
+				<li><b>Pink color for positively-related data points: 1.</b> While discouraged by this class
+					when discussing gender, pink is often positively associated with pro-women-related movements
+					(e.x. breast cancer awareness) therefore this color association promotes an inviting enviroment
+					to supporters. </li>
+				<li><b>Two-Tone Women in Parliament Representation: -1.</b>
+					While it may seem awkward, I consdiered 50% as the optimal number of where the female gender
+					would be in authorative power given a sex ratio. Countries &ge;25% women in parliament would be
+					considered nations "heading in the right direction" to better gender representation in government,
+					therefore I believe is more earnest. However, a gradient would be more sufficient to visually explain
+					how gender representation fluctuates from country to country, as there is little graph variaton.
+				</li>
+				<li><b>Title: -1.</b> There is a clear narrative, though could be considered tone-deaf as diversity exists
+				in many facets (race, disability, sexual orientation) other than gender. This could be trying to grab attention
+				of those any underrepresented diverse group, despite only focusing one type of demographic.</li>
+			</ul>
+    </section>
+
+    <section>
+      <h3>AGAINST the Proposition</h3>
+
+      <figure>
+				<img src="Anti-Female Power.png" alt="Graph depicting high pollution in high population centers." />
+				<figcaption>
+			Countries with &ge;25% women in parliament have high amount of workers living with air pollution,
+			indicating gender to work conditions have no or worse correlation.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Decisions and Rationale:
+			</p>
+
+			<ul>
+				<li><b>Living in Polluted Air Scale: -2</b> This chart at first glance easily paints a narrative,
+				as it seems the living (therefore working) conditions of a countyr of considerably terrible. However,
+				after receognizing multiple country codes (Australia, Netherlands, etc.) and comparing its percent value to
+				Finland, with prior knowledge I would be relatively skeptical about how this data is portrayed.
+				Originally, I had planned to use a different graph depicting labor force perecentages and vulnerability  </li>
+				<li><b>Top Chart: Mapping Urban Population scale: 2</b> No information is this chart is manipulated.
+				The chart is easily readible, and corresponds with the second data point emphasized in the bottom graph. </li>
+				<li><b>Data Point Imagery: -1.</b> The usage of exclamation points is relatively dramatic.
+				It seems the top chart has very negative data given the title's sacrasm, despite it presenting
+				a simple fact of urbanization in various &ge;25% women-parliament countries.</li>
+				<li><b>Living in Polluted Air Chart Color: -1.</b>Red is often associated with the feelings of "stop" or
+				"negative". Alongside the fact the bars look like blood lines dripping, it could indicate how little
+				the women in parliament "don't care" about resulting health conditions from air pollution. I would love to try
+				an upside down axis, mentioned in the original article about "Gun Deaths in Florida" to play with
+				persuasive visualizations. </li>
+				<li><b>Title: -2.</b> The title could do without sarcasm. If this chart was paired with an article,
+				it could be easily guided to an article against progressive female representation in government, or simply those
+				that think highlighting it is ineffective. It cases to audience, rather than letting the visual remain objective.
+				</li>
+			</ul>
+    </section>
+
+    <section>
+      <h2>Final Reflection</h2>
+
+      <p>This design process of creating persuasive visuals was relatively difficult.
+		Trends to go against propositions were fairly common, not to mention when trends
+		did not exist at all. Countries contain different living conditions and cultural norms,
+		so providing a worldwide conclusion on a social phemonena was not easy to create.
+		Contrastly, I did not expect how Tableau works against data manipulation. There was an
+		extent to what Tableau allowed you to manipulate data with fromat, axis and grouping. You could
+		not just remove color:value correspondence without completely manipulating raw data. In addition,
+		Tableau would often remove previously-available options if data representation would not make senese.
+		It makes me wonder how much ethical practice is engrained into Tableau software development.
+	  </p>
+	   <p>
+		Besides my technical experience, I found "ethical analysis" to be a relatively easy line to cross over.
+		Misinformation over comes from words, in which data (visually represented) is used to refute it-- yet data
+		can also be missrepresented as well! This encourages me to be better questioning data visuals, instead
+		assuming, "It's in a graph, so it must be correct." Ethical analysis, personally means the most optimal way to
+		represent data from a table into colors and shapes. This should little to no manipulation when presenting, only for
+		visual effects. If a table (CSV/Excel spreadsheet) has a trend, that visual must share that result as well. It's
+		hard to draw boundaries on "acceptable" persuasive choices, because when two sides to an argument exist, an opposing
+		side to an argument can understand any part of your visual to be "unacceptable" and "problematic". I think the most
+		important bound in general is, if readers have to squint because they feel they don't have the full picture/are being
+		misled, then you have failed at making a good visualization.
+	   </p>
+    </section>
+	</main>
+</body>
+</html>
